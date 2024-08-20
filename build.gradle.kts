@@ -13,7 +13,7 @@ version = "0.6-SNAPSHOT"
 allure {
     environment.put("ALLURE_NO_ANALYTICS","true")
     environment.put("JAVA_HOME",System.getProperty("java.home"))
-    version = "2.25.0"
+    version = "2.30.0"
 }
 
 subprojects {

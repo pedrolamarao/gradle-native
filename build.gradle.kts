@@ -1,7 +1,5 @@
 // Copyright (c) Pedro Lamarão <pedro.lamarao@gmail.com>. All rights reserved.
 
-import io.qameta.allure.gradle.base.tasks.ConditionalArgumentProvider
-
 plugins {
     id("base")
     id("io.qameta.allure-aggregate-report")
@@ -13,7 +11,7 @@ version = "0.6-SNAPSHOT"
 allure {
     environment.put("ALLURE_NO_ANALYTICS","true")
     environment.put("JAVA_HOME",System.getProperty("java.home"))
-    version = "2.25.0"
+    version = "2.30.0"
 }
 
 subprojects {
@@ -22,8 +20,8 @@ subprojects {
 }
 
 tasks.allureAggregateReport.configure {
-    argumentProviders += ConditionalArgumentProvider( project.provider { listOf("--single-file") } )
     clean = true
+    singleFile = true
 }
 
 tasks.wrapper.configure {

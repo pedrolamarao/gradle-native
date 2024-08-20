@@ -37,7 +37,7 @@ Check the link:samples[] for a variety of use-cases.
 
 Current requirements:
 
-* Gradle 8.6 or newer
+* Gradle 8.10 or newer
 * JDK 17 or newer
 * LLVM 16 or newer (with `clang`, `clang-scan-deps`, `lld`, `llvm-ar` etc.)
 
@@ -52,7 +52,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id.startsWith("br.dev.pedrolamarao.metal.")) {
-                useModule("br.dev.pedrolamarao.gradle.metal:plugins:0.5+")
+                useModule("br.dev.pedrolamarao.gradle.metal:plugins:0.6+")
             }
         }
     }
@@ -61,6 +61,7 @@ pluginManagement {
 
 Under construction:
 
+* Gradle configuration cache support
 * build flavour (e.g. `debug`, `release`)
 * shared library
 * source dependencies on cmake project

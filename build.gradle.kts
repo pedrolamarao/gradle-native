@@ -25,5 +25,5 @@ tasks.allureAggregateReport.configure {
 }
 
 tasks.wrapper.configure {
-    gradleVersion = "8.6"
+    gradleVersion = "8.10"
 }

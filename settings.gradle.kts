@@ -5,8 +5,8 @@ enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 pluginManagement {
     plugins {
         id("com.gradle.plugin-publish") version("1.2.1")
-        id("io.qameta.allure-adapter") version("2.11.2")
-        id("io.qameta.allure-aggregate-report") version("2.11.2")
+        id("io.qameta.allure-adapter") version("2.12.0")
+        id("io.qameta.allure-aggregate-report") version("2.12.0")
     }
 }
 
